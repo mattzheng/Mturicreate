@@ -45,8 +45,8 @@ def similar(svec_tc,label = None,distance = 'cosine',topn = 10):
     return simliar_dataframe
 
  if __name__ == '__main__':
-	data = pd.read_csv('/mnt/GSH.csv') # 导入数据
-	svec = vec2SFrame(list(data.test))  # 文本列
-	similar_dataframe = similar(svec,label = data.name)
-	#similar_dataframe[simliar_dataframe['simliar']>0.8]
-	similar_dataframe.to_csv('/mnt/similiar.csv',encoding = 'utf-8',index = False)
+    data = pd.read_csv('/mnt/GSH.csv') # 导入数据
+    svec = vec2SFrame(list(data.test))  # 文本列
+    similar_dataframe = similar(svec,label = data.name)
+    #similar_dataframe[simliar_dataframe['simliar']>0.8]
+    similar_dataframe.to_csv('/mnt/similiar.csv',encoding = 'utf-8',index = False)
