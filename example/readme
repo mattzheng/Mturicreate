@@ -1,2 +1,3 @@
 ## 案例一:
+text_similar.py
 利用turicreate进行文字去重，近邻模块算法。
